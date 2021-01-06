@@ -1,16 +1,16 @@
 import React from "react";
-import notes from "../notes";
 import Header from './Header';
 import Footer from './Footer';
 import Note from './Note';
+import notes from "../notes";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Footer />
-      <Note />
-    </div>
+      <div>
+          <Header />
+          <Footer />
+          <dl>{notes.map(Note)}</dl>
+      </div>
   );
 }
 
